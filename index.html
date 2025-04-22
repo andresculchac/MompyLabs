@@ -1,86 +1,16 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mompy Labs</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background-color: #1a1a1a;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 3em;
-    }
-    header p {
-      font-size: 1.2em;
-      margin-top: 10px;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    .highlight {
-      color: #4caf50;
-      font-weight: bold;
-    }
-    footer {
-      background-color: #f1f1f1;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-      color: #777;
-    }
-    .contact-form, .social-media, .download-section {
-      margin-top: 40px;
-    }
-    .contact-form input, .contact-form textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    .contact-form button {
-      background-color: #4caf50;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    .social-media a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #4caf50;
-      font-weight: bold;
-    }
-    .download-button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: #1a1a1a;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
     <h1>Mompy Labs</h1>
-    <p><em>Creamos soluciones, inspiramos productividad.</em></p>
+    <p><em>Creamos soluciones. Inspiramos productividad.</em></p>
   </header>
 
   <section>
@@ -119,7 +49,7 @@
 
     <div class="contact-form">
       <h2>✉️ Contáctanos</h2>
-      <form action="#" method="post">
+      <form action="#" method="post" onsubmit="return enviarFormulario()">
         <input type="text" name="name" placeholder="Tu nombre" required>
         <input type="email" name="email" placeholder="Tu correo electrónico" required>
         <textarea name="message" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
@@ -131,5 +61,7 @@
   <footer>
     &copy; 2025 Mompy Labs. Todos los derechos reservados.
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
