@@ -7,10 +7,12 @@ body {
   color: #333;
 }
 header {
-  background-color: #1a1a1a;
-  color: white;
-  padding: 40px 20px;
+  background-color: #05090C;
+  color: #f9f9f9;
+  padding: 5px 0; /* Antes: 0px 0px */
   text-align: center;
+  line-height: 1.2; /* Opcional: reduce espacio entre líneas si hay texto */
+  font-size: 14px;  /* Opcional: reduce tamaño de fuente */
 }
 header h1 {
   margin: 0;
@@ -69,3 +71,16 @@ footer {
   text-decoration: none;
   border-radius: 5px;
 }
+.logo {
+  width: 400px;        /* ajusta el tamaño */
+  height: 200px;       /* ajusta el tamaño */
+  max-width: 119%;     /* asegura que no exceda el contenedor */
+  max-height: 100%;    /* asegura que no exceda el contenedor */
+  object-fit: cover; /* mantiene la proporción */
+  /* object-fit: cover;  */ /* opcional: cubre el contenedor */
+  /* object-fit: fill;   */ /* opcional: estira la imagen */
+  /* object-fit: scale-down; */ /* opcional: escala la imagen */
+  display: block;
+  margin: 20px auto;   /* centra el logo */
+}
+/* File: styles.css */
